@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PolicyModelStoreContainer" CdmEntityContainer="ProjectDbEntities2">
+    <EntitySetMapping Name="Policy">
+      <EntityTypeMapping TypeName="PolicyModel.Policy">
+        <MappingFragment StoreEntitySet="Policy">
+          <ScalarProperty Name="PoliceNo" ColumnName="PoliceNo" />
+          <ScalarProperty Name="SirketAdi" ColumnName="SirketAdi" />
+          <ScalarProperty Name="PoliceUrunGrubu" ColumnName="PoliceUrunGrubu" />
+          <ScalarProperty Name="TanzimTarihi" ColumnName="TanzimTarihi" />
+          <ScalarProperty Name="VadeTarihi" ColumnName="VadeTarihi" />
+          <ScalarProperty Name="PrimTutari" ColumnName="PrimTutari" />
+          <ScalarProperty Name="Teminatlar" ColumnName="Teminatlar" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+          <ScalarProperty Name="Borc" ColumnName="Borc" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PolicyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Policy">
+    <Key>
+      <PropertyRef Name="PoliceNo" />
+    </Key>
+    <Property Name="PoliceNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SirketAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PoliceUrunGrubu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TanzimTarihi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="VadeTarihi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PrimTutari" Type="Double" Nullable="false" />
+    <Property Name="Teminatlar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tip" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Borc" Type="Double" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ProjectDbEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Policy" EntityType="Self.Policy" />
+  </EntityContainer>
+</Schema>

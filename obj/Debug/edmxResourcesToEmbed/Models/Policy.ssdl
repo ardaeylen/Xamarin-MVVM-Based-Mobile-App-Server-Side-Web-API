@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PolicyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Policy">
+    <Key>
+      <PropertyRef Name="PoliceNo" />
+    </Key>
+    <Property Name="PoliceNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SirketAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PoliceUrunGrubu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TanzimTarihi" Type="date" Nullable="false" />
+    <Property Name="VadeTarihi" Type="date" Nullable="false" />
+    <Property Name="PrimTutari" Type="float" Nullable="false" />
+    <Property Name="Teminatlar" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tip" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Borc" Type="float" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PolicyModelStoreContainer">
+    <EntitySet Name="Policy" EntityType="Self.Policy" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
